@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby
+
+require "research_life_kit"
