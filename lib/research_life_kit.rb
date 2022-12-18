@@ -56,19 +56,17 @@ require 'nokogiri'
 
 
 browser = Watir::Browser.new
-#browser.goto 'https://ieeexplore.ieee.org.kwansei.remotexs.co/search/searchresult.jsp?newsearch=true&queryText=ICN'
-# browser.goto 'https://ieeexplore.ieee.org.kwansei.remotexs.co/search/searchresult.jsp?newsearch=true&queryText=Information\/Centric\/Networking'
-
-browser.goto 'https://ieeexplore.ieee.org.kwansei.remotexs.co/search/searchresult.jsp?highlight=true&returnFacets=ALL&returnType=SEARCH&matchPubs=true'
+browser.goto 'https://ieeexplore.ieee.org.kwansei.remotexs.co/Xplore/home.jsp'
 browser.text_field(id:'username').set 'hus50851'
 browser.text_field(id:'password').set '5v7bJ5ND'
 browser.button(id: 'login').click
+
+
+browser.text_field(xpath: '//*[@id="LayoutWrapper"]/div/div/div/div[3]/div/xpl-root/xpl-header/div/div/div/xpl-search-bar-migr/div/form/div[2]/div/div[1]/xpl-typeahead-migr/div/input').set("Information Centric Networking")
+# browser.button(:text => 'submit').click
+browser.button(type: 'submit').click
+
 sleep 5
-
-
-browser.text_field(:id,"Typeahead-input ng-pristine ng-valid ng-touched").set 'Information Centric Networking'
-browser.button(id: 'submit').click
-
 parsed_page = Nokogiri::HTML(browser.html)
 File.open("parsed.html", "w") { |f| f.write "#{parsed_page}" }
 
@@ -128,3 +126,9 @@ end
   # puts title
   # puts link
   # end
+
+
+
+
+# https://ieeexplore.ieee.org.kwansei.remotexs.co/search/searchresult.jsp?newsearch=true&queryText=Information%5C%2FCentric%5C%2FNetworking
+# browser.goto 'https://ieeexplore.ieee.org.kwansei.remotexs.co/search/searchresult.jsp?newsearch=true&queryText=ICN'
