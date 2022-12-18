@@ -17,8 +17,11 @@ require 'nokogiri'
 class Ieice
   attr_accessor :user, :password, :keyword, :num_of_papers
 
+  def initialize()
+    @titles_array =[]
+  end
+
   def titles
-    title_arrays =[]
     url = 'https://ieeexplore.ieee.org.kwansei.remotexs.co/Xplore/home.jsp'
     browser = Watir::Browser.new
     browser.window.maximize
@@ -39,7 +42,7 @@ class Ieice
     parsed_page = Nokogiri::HTML(browser.html)
     parsed_page.css('.col.result-item-align').css('h3.text-md-md-lh').map do |element|
       contents = element.text
-      title_arrays.push(contents)
+      @titles_array.push(contents)
     end
 
     if num_of_papers >= 2
@@ -53,18 +56,26 @@ class Ieice
 
         parsed_page.css('.col.result-item-align').css('h3.text-md-md-lh').map do |element|
           contents = element.text
-          title_arrays.push(contents)
+          @titles_array.push(contents)
         end
       end
     end
 
-    for title in title_arrays  do
+    for title in @titles_array  do
       puts "#{title}"
     end
   end
 
   def titles_save
-    
+    # File.open("titles.org")
+    # for title in @titles_array  do
+    #   File.write("titles.org","#{title}")
+    # end
+
+    File.open("titles.org", "w") { |file| file.write '#{titles_arrays}' }
+
+    # File.open('titles.org', 'w') { |f| @titles_array.each { |line| f << line + '\n' } }
+    # File.open("parsed.html", "w") { |f| f.write "#{parsed_page}" }
   end
 end
 
@@ -74,6 +85,7 @@ organization_instance.password = "5v7bJ5ND"
 organization_instance.keyword = "Information Centric Networking"
 organization_instance.num_of_papers =3
 puts organization_instance.titles
+puts organization_instance.titles_save
 
 
 # browser = Watir::Browser.new
