@@ -9,3 +9,23 @@ gem 'watir'
 gem 'webdrivers'
 gem 'nokogiri'
 #+END_SRC
+
+
+XPath
+
+
+
+
+
+
+
+
+
+
+
+Watir/Ruby : How to click on a text in dropdown in Ruby/Watir
+https://stackoverflow.com/questions/21403691/watir-ruby-how-to-click-on-a-text-in-dropdown-in-ruby-watir
+
+
+Scroll Down
+https://stackoverflow.com/questions/13608890/how-to-scroll-a-web-page-using-watir
