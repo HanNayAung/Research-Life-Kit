@@ -3,6 +3,9 @@
 # In order to run, need to Install 'watir' , 'webdrivers', 'nokogiri'
 # gems.
 
+
+# Paper Download , args
+
 require_relative "research_life_kit/version"
 require 'watir'
 require 'webdrivers'
@@ -16,7 +19,7 @@ require 'watir-scroll'
 # end
 
 class Ieice
-  attr_accessor :user, :password, :keyword, :num_of_papers
+  attr_accessor :user, :password, :keyword, :page
 
   def initialize()
     # paper title
@@ -29,19 +32,19 @@ class Ieice
     @tmp_array = []
   end
 
-  def titles
+  def extract_paper_title_abstract
     url = 'https://ieeexplore.ieee.org.kwansei.remotexs.co/Xplore/home.jsp'
     browser = Watir::Browser.new
     # browser.window.maximize
     browser.goto url
 
-    # Login
+    # Login using firefox
     browser.text_field(id:'username').set user
     browser.text_field(id:'password').set password
     browser.button(id: 'login').click
 
     # Search According to Keyword
-    xpath = '//*[@id="LayoutWrapper"]/div/div/div/div[3]/div/xpl-root/xpl-header/div/div/div/xpl-search-bar-migr/div/form/div[2]/div/div[1]/xpl-typeahead-migr/div/input'
+    xpath = '/html/body/div[5]/div/div/div/div[3]/div/xpl-root/xpl-header/div/div/div/xpl-search-bar-migr/div/form/div[2]/div/div[1]/xpl-typeahead-migr/div/input'
     browser.text_field(xpath: xpath).set keyword
     browser.button(type: 'submit').click
     sleep 5
@@ -55,6 +58,7 @@ class Ieice
     parsed_page.css('div.List-results-items').map do |element|
       @paper_id_array.push(element.attribute("id"))
     end
+
     # Show Abstract of each paper in the current page
     for id in @paper_id_array  do
       button = browser.div(:id => "#{id}").div.div(:class => 'row doc-access-tools-container').ul(:class => "List List--horizontal").li(:class => "List-item u-mr-2").a(:class => "js-displayer-control abstract-control u-flex-display-flex u-flex-align-items-center u-hover-text-dec-none stats_Abstract_ShowMore").span(:text => 'Abstract')
@@ -66,12 +70,10 @@ class Ieice
     parsed_page.css('div.js-displayer-content.u-mt-1.stats-SearchResults_DocResult_ViewMore.text-base-md-lh').map do |element|
       @paper_abstract_array.push(element.text)
     end
-    sleep 5
 
-    if num_of_papers >= 2
-      2.upto(num_of_papers) do |number|
-        puts number
-        # browser.window.maximize
+
+    if page >= 2
+      for number in 2..page do
         browser.scroll.to :bottom
         browser.div(:class => "pagination-bar hide-mobile text-base-md-lh").ul.li(:text => number.to_s).click
         sleep 5
@@ -84,7 +86,6 @@ class Ieice
         parsed_page.css('div.List-results-items').map do |element|
           @tmp_array.push(element.attribute("id"))
         end
-
         # Show Abstract of each paper in the current page
         for id in @tmp_array  do
           button = browser.div(:id => "#{id}").div.div(:class => 'row doc-access-tools-container').ul(:class => "List List--horizontal").li(:class => "List-item u-mr-2").a(:class => "js-displayer-control abstract-control u-flex-display-flex u-flex-align-items-center u-hover-text-dec-none stats_Abstract_ShowMore").span(:text => 'Abstract')
@@ -92,37 +93,46 @@ class Ieice
           button.click
         end
         parsed_page = Nokogiri::HTML(browser.html)
-        # Insert each abstract of paper  in the current page into title_array
+        # Insert each abstract of paper in the current page into title_array
         parsed_page.css('div.js-displayer-content.u-mt-1.stats-SearchResults_DocResult_ViewMore.text-base-md-lh').map do |element|
           @paper_abstract_array.push(element.text)
         end
 
       end
     end
-
-    # for title in @paper_title_array  do
-    #   puts "#{title}"
-    # end
   end
 
-  def titles_save
+  def save_informations
     File.open("titles.org", "w+") do |file|
       @paper_title_array.each { |element| file.puts("* " + element) }
-      @paper_id_array.each { |element| file.puts("** " + element) }
-      @paper_abstract_array.each { |element| file.puts("*** " + element) }
+      @paper_abstract_array.each { |element| file.puts("** " + element) }
+      @paper_id_array.each { |element| file.puts("*** " + element) }
     end
   end
+
+
+  def download_paper_from_id
+  end
+
+  def download_papers
+  end
+
+
 end
 
 organization_instance = Ieice.new
-organization_instance.user = ""
-organization_instance.password = ""
-organization_instance.keyword = "Information Centric Networking"
-organization_instance.num_of_papers =2
-puts organization_instance.titles
-puts organization_instance.titles_save
+organization_instance.user = "user"
+organization_instance.password = "password"
+organization_instance.keyword = "EFM: An Edge-Computing-Oriented Forwarding Mechanism for Information-Centric Networks"
+organization_instance.page =1
+puts organization_instance.extract_paper_title_abstract
+puts organization_instance.save_informations
 
 
+#xpath = '//*[@id="LayoutWrapper"]/div/div/div/div[3]/div/xpl-root/xpl-header/div/div/div/xpl-search-bar-migr/div/form/div[2]/div/div[1]/xpl-typeahead-migr/div/input'
+
+
+# 2.upto(page) do |number|
 
 # File.open("parsed.html", "w") { |f| f.write "#{parsed_page}" }
 # parsed_page.css('dvi.js-displayer-content.u-mt-1.stats-SearchResults_DocResult_ViewMore.text-base-md-lh').map do |element|

@@ -11,14 +11,6 @@ gem 'nokogiri'
 #+END_SRC
 
 
-XPath
-
-
-
-
-
-
-
 
 
 
@@ -33,3 +25,6 @@ https://stackoverflow.com/questions/41448473/watir-scroll-gives-an-error-when-sc
 
 Check css element exists ?
 https://stackoverflow.com/questions/9150144/testing-whether-a-html-table-element-exists-using-ruby-watir
+
+UrlEncoding
+http://www.blooberry.com/indexdot/html/topics/urlencoding.htm
