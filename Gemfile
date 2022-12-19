@@ -13,3 +13,4 @@ gem "rspec", "~> 3.0"
 gem 'watir'
 gem 'webdrivers'
 gem 'nokogiri'
+gem 'watir-scroll'

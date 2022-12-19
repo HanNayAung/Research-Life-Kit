@@ -29,3 +29,7 @@ https://stackoverflow.com/questions/21403691/watir-ruby-how-to-click-on-a-text-i
 
 Scroll Down
 https://stackoverflow.com/questions/13608890/how-to-scroll-a-web-page-using-watir
+https://stackoverflow.com/questions/41448473/watir-scroll-gives-an-error-when-scrolling-to-element
+
+Check css element exists ?
+https://stackoverflow.com/questions/9150144/testing-whether-a-html-table-element-exists-using-ruby-watir
