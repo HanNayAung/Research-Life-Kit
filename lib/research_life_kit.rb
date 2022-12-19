@@ -38,7 +38,7 @@ class Ieice
     browser.button(type: 'submit').click
 
     # Insert each title into title_arrays
-    sleep 3
+    sleep 5
     parsed_page = Nokogiri::HTML(browser.html)
     parsed_page.css('.col.result-item-align').css('h3.text-md-md-lh').map do |element|
       contents = element.text
@@ -51,7 +51,7 @@ class Ieice
         browser.window.maximize
         browser.scroll.to :bottom
         browser.div(:class => "pagination-bar hide-mobile text-base-md-lh").ul.li(:text => number.to_s).click
-        sleep 3
+        sleep 5
         parsed_page = Nokogiri::HTML(browser.html)
 
         parsed_page.css('.col.result-item-align').css('h3.text-md-md-lh').map do |element|
@@ -67,25 +67,22 @@ class Ieice
   end
 
   def titles_save
-    # File.open("titles.org")
-    # for title in @titles_array  do
-    #   File.write("titles.org","#{title}")
-    # end
-
-    File.open("titles.org", "w") { |file| file.write '#{titles_arrays}' }
-
-    # File.open('titles.org', 'w') { |f| @titles_array.each { |line| f << line + '\n' } }
-    # File.open("parsed.html", "w") { |f| f.write "#{parsed_page}" }
+    File.open("titles.org", "w+") do |file|
+      @titles_array.each { |element| file.puts(element) }
+    end
   end
 end
 
 organization_instance = Ieice.new
-organization_instance.user = "hus50851"
-organization_instance.password = "5v7bJ5ND"
+organization_instance.user = "x"
+organization_instance.password = "xx"
 organization_instance.keyword = "Information Centric Networking"
 organization_instance.num_of_papers =3
 puts organization_instance.titles
 puts organization_instance.titles_save
+
+
+
 
 
 # browser = Watir::Browser.new
@@ -132,15 +129,6 @@ puts organization_instance.titles_save
 # end
 
 # File.open("title.org", "w") { |f| f.write "#{title_arrays}" }
-
-
-
-
-
-
-
-
-
 
 # browser.button('//*[@id="xplMainContent"]/div[2]/div[2]/xpl-paginator/div[2]/ul/li[3]').click()
 # browser.div(:class => "pagination-bar hide-mobile text-base-md-lh").ul.li(:class => "stats-Pagination_2").click
