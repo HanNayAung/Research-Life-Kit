@@ -9,6 +9,7 @@ GEM
     diff-lcs (1.5.0)
     nokogiri (1.13.10-x86_64-linux)
       racc (~> 1.4)
+    optparse (0.3.0)
     racc (1.4.16)
     rake (13.0.3)
     regexp_parser (2.6.1)
@@ -47,6 +48,7 @@ PLATFORMS
 
 DEPENDENCIES
   nokogiri
+  optparse
   rake (~> 13.0)
   research_life_kit!
   rspec (~> 3.0)
