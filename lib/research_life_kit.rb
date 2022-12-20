@@ -1,5 +1,10 @@
 #!/usr/bin/ruby
-
+#
+#
+# Copyright (c) 2022, Han Nay Aung.
+# All rights reserved.
+#
+# $Id: $
 # In order to run, need to Install 'watir' , 'nokogiri', 'optparse' gems.
 
 require_relative "research_life_kit/version"
@@ -120,11 +125,9 @@ class Ieice
   end
 
   def download_papers
-
   end
 
 end
-
 
 @website, @institutional, @keyword, @title, @page=''
 OptionParser.new do |opts|
@@ -136,7 +139,7 @@ OptionParser.new do |opts|
   opts.on("-p=s", "page") {|page| @page = page.to_s}
 end.parse!
 
-puts @website, @institutional, @keyword, @page ,@title
+# puts @website, @institutional, @keyword, @page ,@title
 
 if @website == 'ieice'
   organization_instance = Ieice.new
