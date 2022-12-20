@@ -1,254 +1,255 @@
 * Recent Advances in Information-Centric Networking-Based Internet of Things (ICN-IoT)
 ** abstract
-Recent Advances in Information-Centric Networking-Based Internet of Things (ICN-IoT)
+Information-centric networking (ICN) is being realized as a promising approach to accomplish the shortcomings of current Internet protocol-address-based networking. ICN models are based on naming the content to get rid of address-space scarcity, accessing the content via name-based-routing, and caching the content at intermediate nodes to provide reliable, efficient data delivery, and ...Show More
 *** paper id
-8384997
+9475115
 * Editorial of special issue for WOCC 2020
 ** abstract
-Editorial of special issue for WOCC 2020
+As guest editors for this Special Issue of the Intelligent and Converged Networks (ICN), we are pleased to present a selection of the important contribution to the 29th Wireless and Optical Communications Conference (WOCC 2020), which was held online in May of 2020.Show More
 *** paper id
-8012045
+9198056
 * Foreword by secretary-general of ITU
 ** abstract
-Foreword by secretary-general of ITU
+The introduction of Intelligent and Converged Networks is the latest initiative to emerge from ITU's burgeoning partnership with Tsinghua University, a partnership grounded in our mutual commitment to strengthening the bonds between Academia and ITU.Show More
 *** paper id
-9530761
+9314165
 * Foreword by editor-in-chief
 ** abstract
-Foreword by editor-in-chief
+As the founding Editor-in-Chief, it is my great honor and pleasure to present you the first issue of Intelligent and Converged Networks, a new joint publication of the International Telecommunication Union (ITU) and Tsinghua University.Show More
 *** paper id
-8511870
+9314162
 * Foreword by president of Tsinghua university
 ** abstract
-Foreword by president of Tsinghua university
+As the president of Tsinghua University, I am delighted to read the inaugural edition of this journal, Intelligent and Converged Network, and see the fruitful outcomes of the Tsinghua — International Telecommunication Union (ITU) partnership.Show More
 *** paper id
-8690546
+9198059
 * ICN Performance Enhancing Proxies for the Global Content Distribution
 ** abstract
-ICN Performance Enhancing Proxies for the Global Content Distribution
+In this paper, we reveal the potential performance degradation in the global content distribution over Information-Centric Networking (ICN), and propose an ICN performance enhancing proxy (PEP) to mitigate this degradation. ICN follows a pull-based communication model, and congestion control is done by the consumer. Due to the fact that the consumer increases its congestion windo...Show More
 *** paper id
-8748919
+9475114
 * A Survey of Security Attacks in Information-Centric Networking
 ** abstract
-A Survey of Security Attacks in Information-Centric Networking
+Information-centric networking (ICN) is a new communication paradigm that focuses on content retrieval from a network regardless of the storage location or physical representation of this content. In ICN, securing the content itself is much more important than securing the infrastructure or the endpoints. To achieve the security goals in this new paradigm, it is crucial to have a compr...Show More
 *** paper id
-9355896
+9314164
 * A Cluster-based Mechanism for Vehicular Networks in the Scale-Free ICN Core Network
 ** abstract
-A Cluster-based Mechanism for Vehicular Networks in the Scale-Free ICN Core Network
+The repetition of content requests happens frequently in the vehicular networks, and it is increasing depending on the vehicular density in a certain area. On the other hand, information-centric networking (ICN) is being used in the vehicular networks to fulfill the faster content communication requirements, reduce latency, and enhance the network capacity. Although, the ICN-based vehi...Show More
 *** paper id
-7842348
+9475116
 * Frequency assignment function for unmanned-aircraft command and control links
 ** abstract
-Frequency assignment function for unmanned-aircraft command and control links
+Safe operation of unmanned aircraft systems (UAS) requires dependable command and control (C2) radio links Spectrum management needed to protect against radio-frequency interference (RFI) 2012: World Radiocommunication Conference made 5030-5091 MHz band available to UAS C2 links 2016: RTCA issued DO-362 (Minimum Operational Performance Standards (MOPS) for Terrestrial C2 Data Links) - Contains spe...Show More
 *** paper id
-9552913
+9310744
 * An ICN system focusing on distributed MQTT Brokers for IoT services
 ** abstract
-An ICN system focusing on distributed MQTT Brokers for IoT services
+Network technologies for the Internet of Things (IoT) have been widely discussed for real time deployment. In the IoT services, a huge number of small packets are transferred across the networks. If the current Internet technologies are applied to these services, a large overhead is caused by the IP routing process, information discovery, and large protocol headers, such as HTTP over TCP. In addre...Show More
 *** paper id
-7363308
+9475112
 * A Multiple Hash Routing Scheme for Fast Data Retrieval in ICN
 ** abstract
-A Multiple Hash Routing Scheme for Fast Data Retrieval in ICN
+Compared to legacy TCP/IP networking, a notable feature of ICN is to utilize in-network storages. ICN architectures basically adopt on-path caching mechanism. However, the benefits of on-path caching are limited because the caching is bounded to ICN nodes on the request path. To overcome the limitation of on-path caching mechanism, various types of off-path caching mechanism have...Show More
 *** paper id
-6675421
+9314161
 * ICNS 2019 Panel Discussion
 ** abstract
-ICNS 2019 Panel Discussion
+This article consists of a collection of slides from the author's conference presentation.Show More
 *** paper id
-7987349
+9622205
 * ICNS 2019 Panel Discussion
 ** abstract
-ICNS 2019 Panel Discussion
+This article consists of a collection of slides from the author's conference presentation.Show More
 *** paper id
-8988885
+9475113
 * ICNS 2019 Panel Discussion
 ** abstract
-ICNS 2019 Panel Discussion
+This article consists of a collection of slides from the author's conference presentation.Show More
 *** paper id
-8847127
+9622200
 * Study of p-ICN defined performance measurement Enterprise Architecture
 ** abstract
-Study of p-ICN defined performance measurement Enterprise Architecture
+In this paper we propose the performance evaluation based Information Control Nets (p-ICN) to achieve the full compliance with the international organization UN recommendation to get the performance evaluation all over the e-Government projects due to its nature of huge scale and long term project plan of IT investment. However, current real world there is not enough suitable and tangible me...Show More
 *** paper id
-9310745
+9622203
 * ICN-PEP: ICN Performance Enhancing Proxy for the Efficient Global Content Distribution
 ** abstract
-ICN-PEP: ICN Performance Enhancing Proxy for the Efficient Global Content Distribution
+A global content distribution is one of the important roles of the Internet. Information-Centric Networking (ICN) is a future internet architecture which attempts to redesign the Internet with a focus on content distribution. However, it has the potential performance degradation in the global content distribution. In this paper, we propose an ICN performance enhancing proxy (ICN-...Show More
 *** paper id
-9310743
+9475111
 * Implementation and Evaluation of Flow-level Network Simulator for Large-scale ICN Networks
 ** abstract
-Implementation and Evaluation of Flow-level Network Simulator for Large-scale ICN Networks
+In recent years, ICN (Information-Centric Networking) that focuses on the data being transferred, rather than hosts exchanging the data, has been attracting attention as one of the promising next-generation Internet architectures. It has developed that fluid model of large-scale ICN networks, which is aimed at analyzing the performance of transport layer protocols in ICN networks...Show More
 *** paper id
-9310746
+9622202
 * A Subscription-Based Push Mechanism for IoT-ICN
 ** abstract
-A Subscription-Based Push Mechanism for IoT-ICN
+Recent studies in the field of Information-Centric Networking (ICN) suggest the need for push-based communication, which is not supported by current pull-based ICN architectures such as Name Data Networking (NDN). There are limitations in using pull-based communication for real-time event transmission in IoT environment. We propose a subscription-based push mechanism that can be applie...Show More
 *** paper id
-9310742
+9622201
 * An LSTM-based Mobility Prediction Mechanism in the ICN-based Vehicular Networks
 ** abstract
-An LSTM-based Mobility Prediction Mechanism in the ICN-based Vehicular Networks
+Conventional mobility prediction mechanisms use the global positioning system (GPS) location history of a user. However, the exiting mechanisms did not focus enough on the time-dependent sequential location history for mobility prediction. On the other hand, information-centric networking (ICN) is a recent paradigm for future Internet architecture, and the built-in caching mechanism is one o...Show More
 *** paper id
-9314166
+8353136
 * SGX-ICN: A Secure and Privacy-Preserving Information-Centric Networking with SGX Enclaves
 ** abstract
-SGX-ICN: A Secure and Privacy-Preserving Information-Centric Networking with SGX Enclaves
+As the next-generation network architecture, Information-Centric Networking (ICN) has emerged as a novel paradigm to cope with the increasing demand for content delivery on the Internet. In contrast to the conventional host-centric architectures, ICN focuses on content retrieval based on their name rather than their storage location. However, ICN is vulnerable to various security...Show More
 *** paper id
-9198057
+9448212
 * A Study on Effective Congestion Control to Retrieve Distributed Data in ICN
 ** abstract
-A Study on Effective Congestion Control to Retrieve Distributed Data in ICN
+Information-centric networking (ICN) is expected as a novel network architecture for content delivery services. In ICN, content routers (CRs) with a cache function store a chunk received from upstream CRs or servers. Therefore, clients can retrieve distributed chunks from multiple nodes simultaneously. However, it will cause heavy congestion due to competition of multiple flows in a ne...Show More
 *** paper id
-9314163
+8323906
 * Editorial
 ** abstract
-Editorial
+Reconfigurable Intelligent Surface (RIS), also known as intelligent reflecting surface or large intelligent surface, is an emerging new physical-layer technology in the field of wireless communications. The basic idea of RIS is to deploy a reconfigurable passive array in the environment to manipulate the propagation of electron-magnetic waves. RIS promises a new design paradigm for wireless commun...Show More
 *** paper id
-9622204
+7486407
 * Efficient Caching for Delivery of Multimedia Information with Low Latency in ICN
 ** abstract
-Efficient Caching for Delivery of Multimedia Information with Low Latency in ICN
+Information-centric networking (ICN) is being recognized as a useful technology for efficient and fast content retrieval for multimedia applications and will accelerate the change from the traditional host-oriented network architecture to the content-oriented network architecture. In this paper, we propose an efficient content retrieval mechanism based on cluster-based caching in ICN. ...Show More
 *** paper id
-9198054
+8384947
 * Fast eHealth Information Delivery in the ICN-based Mobile Networks
 ** abstract
-Fast eHealth Information Delivery in the ICN-based Mobile Networks
+eHealth information should be delivered within a very short amount of time, in particular, in an emergency situation. eHealth content is delivered from a server upon receiving a request for the content via the network. The location of the content server may be far away from the content requester. In this case, the content delivery time can be large and therefore does not satisfy the content reques...Show More
 *** paper id
-9198058
+8384959
 * Frame structure of the C-band digital aeronautical communications system (CDACS): Integrated communications, navigation and surveillance conference (ICNS) 2018
 ** abstract
-Frame structure of the C-band digital aeronautical communications system (CDACS): Integrated communications, navigation and surveillance conference (ICNS) 2018
+Proposed concepts allow a data rate of ~2.8 Mbit/s per channel including protocol overhead, excluding forward error correction, assuming 3.2 bit/symbol on average This fulfills the predicted throughput requirements The synchronization symbol can be used to indicate position of RACH slot A dynamic header concept can reduce the protocol overhead of a frame under certain circumstances Here: (1 + 5) ×...Show More
 *** paper id
-9198055
-* iCNS update: UAS certification considerations
+8442635
+* True-data testbed for 5G/B5G intelligent network
 ** abstract
-iCNS update: UAS certification considerations
-*** paper id
-
-* iCNS day 3 CNS for UAS/RPAS integration
-** abstract
-iCNS day 3 CNS for UAS/RPAS integration
+Future beyond fifth-generation (B5G) and sixth-generation (6G) mobile communications will shift from facilitating interpersonal communications to supporting internet of everything (IoE), where intelligent communications with full integration of big data and artificial intelligence (AI) will play an important role in improving network efficiency and provi di ng hi gh-quality servi ce. As a rapi d e...Show More
 *** paper id
 
-* Caching Content on the Network Layer: A Performance Analysis of Caching Schemes in ICN-Based Internet of Things
+* Internet of radio and light: 5G building network radio and edge architecture
 ** abstract
-Caching Content on the Network Layer: A Performance Analysis of Caching Schemes in ICN-Based Internet of Things
+The Internet of Radio-Light (IoRL) is a cutting-edge system paradigm to enable seamless 5G service provision in indoor environments, such as homes, hospitals, and museums. The system draws on innovative architectural structure that sits on the synergy between the Radio Access Network (RAN) technologies of millimeter Wave communications (mmWave) and Visible Light Communications (VLC) for improving ...Show More
 *** paper id
 
-* A Security Framework for ICN Traffic Management
+* Interference management in 6G space and terrestrial integrated networks: Challenges and approaches
 ** abstract
-A Security Framework for ICN Traffic Management
+The Space-Terrestrial Integrated Network (STIN) is considered to be a promising paradigm for realizing worldwide wireless connectivity in sixth-Generation (6G) wireless communication systems. Unfortunately, excessive interference in the STIN degrades the wireless links and leads to poor performance, which is a bottleneck that prevents its commercial deployment. In this article, the crucial feature...Show More
 *** paper id
 
-* IoT Use Cases Analysis and Possibility of Adopting ICN Technologies for These loT Use Cases
+* Deep reinforcement learning based worker selection for distributed machine learning enhanced edge intelligence in internet of vehicles
 ** abstract
-IoT Use Cases Analysis and Possibility of Adopting ICN Technologies for These loT Use Cases
+Nowadays, Edge Information System (EIS) has received e lot of attentions. In EIS, Distributed Machine Learning (DML), which requires fewer computing resources, can implement many artificial intelligent applications efficiently. However, due to the dynamical network topology and the fluctuating transmission quality at the edge, work node selection affects the performance of DML a lot. In this paper...Show More
 *** paper id
 
-* Resources Optimization in ICNs through Distributed Cache Using Software Defined Networking – SDN
+* Convergence of mobile broadband and broadcast services: A cognitive radio sensing and sharing perspective
 ** abstract
-Resources Optimization in ICNs through Distributed Cache Using Software Defined Networking – SDN
+With next generation networks driving the confluence of multi-media, broadband, and broadcast services, Cognitive Radio (CR) networks are positioned as a preferred paradigm to address spectrum capacity challenges. CRs address these issues through dynamic spectrum access. However, the main challenges faced by the CR pertain to achieving spectrum efficiency. As a result, spectrum efficiency improvem...Show More
 *** paper id
 
-* Prototype implementation of flat naming scheme ICN on Cefore as the CCN platform
+* Internet of things for high-speed railways
 ** abstract
-Prototype implementation of flat naming scheme ICN on Cefore as the CCN platform
+As a new generation of application infrastructure and strategic emerging technologies, the internet of things (IoT) is an inevitable trend to be integrated into the rapid development of high-speed railways (HSR). This article first introduces the concept and key technologies of the HSR IoT, and then analyzes the HSR's requirerents for the IoTs. Based on these concepts, a system architecture of the...Show More
 *** paper id
 
-* Towards the NFVI-Assisted ICN: Integrating ICN Forwarding into the Virtualization Infrastructure
+* Reinforcement learning based energy-efficient internet-of-things video transmission
 ** abstract
-Towards the NFVI-Assisted ICN: Integrating ICN Forwarding into the Virtualization Infrastructure
+The video transmission in the Internet-of-Things (IoT) system must guarantee the video quality and reduce the packet loss rate and the delay with limited resources to satisfy the requirement of multimedia services. In this paper, we propose a reinforcement learning based energy-efficient IoT video transmission scheme that protects against interference, in which the base station controls the transm...Show More
 *** paper id
 
-* Dynamic Hierarchical Caching Resource Allocation for 5G-ICN Slice
+* Distributed reinforcement learning based framework for energy-efficient UAV relay against jamming
 ** abstract
-Dynamic Hierarchical Caching Resource Allocation for 5G-ICN Slice
+Unmanned aerial vehicle (UAV) network is vulnerable to jamming attacks, which may cause severe damage like communication outages. Due to the energy constraint, the source UAV cannot blindly enlarge the transmit power, along with the complex network topology with high mobility, which makes the destination UAV unable to evade the jammer by flying at will. To maintain communication with a limited bat...Show More
 *** paper id
 
-* Detection and Prevention of Malicious Requests in ICN Routing and Caching
+* Backscatter technologies and the future of internet of things: Challenges and opportunities
 ** abstract
-Detection and Prevention of Malicious Requests in ICN Routing and Caching
+Energy source and circuit cost are two critical challenges for the future development of the Internet of Things (IoT). Backscatter communications offer a potential solution to conveniently obtain power and reduce cost for sensors in IoT, and researchers are paying close attention to the technology. Backscatter technology originated from the Second World War and has been widely applied in the logis...Show More
 *** paper id
 
-* Staleness verification of caching data in ICN
+* A flexible scheduling algorithm for the 5th-generation networks
 ** abstract
-Staleness verification of caching data in ICN
+At present, the 5th-Generation (5G) wireless mobile communication standard has been released. 5G networks efficiently support enhanced mobile broadband traffic, ultra-reliable low-latency communication traffic, and massive machine-type communication. However, a major challenge for 5G networks is to achieve effective Radio Resource Management (RRM) strategies and scheduling algorithms to meet quali...Show More
 *** paper id
 
-* A New ICN routing selecting algorithm based on Link Expiration Time of VANET under the highway environment
+* Pricing-based edge caching resource allocation in fog radio access networks
 ** abstract
-A New ICN routing selecting algorithm based on Link Expiration Time of VANET under the highway environment
+The edge caching resource allocation problem in Fog Radio Access Networks (F-RANs) is investigated. An incentive mechanism is introduced to motivate Content Providers (CPs) to participate in the resource allocation procedure. We formulate the interaction between the cloud server and the CPs as a Stackelberg game, where the cloud server sets nonuniform prices for the Fog Access Points (F-APs) while...Show More
 *** paper id
 
-* Proactive Caching of Mobility Prediction Prefetch and Non-Prefetch in ICN
+* An intelligent wireless transmission toward 6G
 ** abstract
-Proactive Caching of Mobility Prediction Prefetch and Non-Prefetch in ICN
+With the deployment and commercial application of 5G, researchers start to think of 6G, which could meet more diversified and deeper intelligent communication requirements. In this paper, a four physical elements, i.e., man, machine, object, and genie, featured 6G concept is introduced. Genie is explained as a new element toward 6G. This paper focuses on the genie realization as an intelligent wir...Show More
 *** paper id
 
-* Application-specific policy-driven 5G Transport with Hybrid ICN
+* Blockchain-enabled fog resource access and granting
 ** abstract
-Application-specific policy-driven 5G Transport with Hybrid ICN
+Fog computing is a new computing paradigm for meeting ubiquitous massive access and latency-critical applications by moving the processing capability closer to end users. The geographical distribution/floating features with potential autonomy requirements introduce new challenges to the traditional methodology of network access control. In this paper, a blockchain-enabled fog resource access and g...Show More
 *** paper id
 
-* Deep reinforcement learning for dynamic computation offloading and resource allocation in cache-assisted mobile edge computing systems
+* Routing strategy of reducing energy consumption for underwater data collection
 ** abstract
-Deep reinforcement learning for dynamic computation offloading and resource allocation in cache-assisted mobile edge computing systems
+Underwater Wireless Sensor Networks (UWSNs) are widely used in many fields, such as regular marine monitoring and disaster warning. However, UWSNs are still subject to various limitations and challenges: ocean interferences and noises are high, bandwidths are narrow, and propagation delays are high. Sensor batteries have limited energy and are difficult to be replaced or recharged. Accordingly, th...Show More
 *** paper id
 
-* Space-air-ground integrated vehicular network for connected and automated vehicles: Challenges and solutions
+* Intelligent throughput stabilizer for UDP-based rate-control communication system
 ** abstract
-Space-air-ground integrated vehicular network for connected and automated vehicles: Challenges and solutions
+In view of the successful application of deep learning, mainly in the field of image recognition, deep learning applications are now being explored in the fields of communication and computer networks. In these fields, systems have been developed by use of proper theoretical calculations and procedures. However, due to the large amount of data to be processed, proper processing takes time and devi...Show More
 *** paper id
 
-* Research and application of wireless sensor network technology in power transmission and distribution system
+* Multitarget tracking control algorithm under local information selection interaction mechanism
 ** abstract
-Research and application of wireless sensor network technology in power transmission and distribution system
+This study focuses on the problem of multitarget tracking. To address the existing problems of current tracking algorithms, as manifested by the time consumption of subgroup separation and the uneven group size of unmanned aerial vehicles (UAVs) for target tracking, a multitarget tracking control algorithm under local information selection interaction is proposed. First, on the basis of location, ...Show More
 *** paper id
 
-* Triboelectric nanogenerators enabled internet of things: A survey
+* Harmonious wireless networks: Perspective of interference management
 ** abstract
-Triboelectric nanogenerators enabled internet of things: A survey
+This paper elaborates on the harmonious wireless network from the perspective of interference management. The coexistence of useful signals and interfering signals is beneficial in throughput terms of the entire wireless network. Useful signals and interfering signals are complementary and are in juxtaposition to each other in the context of a single communication link, and are in symbiosis within...Show More
 *** paper id
 
-* An intelligent self-sustained RAN slicing framework for diverse service provisioning in 5G-beyond and 6G networks
+* Model-based reinforcement learning for router port queue configurations
 ** abstract
-An intelligent self-sustained RAN slicing framework for diverse service provisioning in 5G-beyond and 6G networks
+Fifth-generation (5G) systems have brought about new challenges toward ensuring Quality of Service (QoS) in differentiated services. This includes low latency applications, scalable machine-to-machine communication, and enhanced mobile broadband connectivity. In order to satisfy these requirements, the concept of network slicing has been introduced to generate slices of the network with specific c...Show More
 *** paper id
 
-* Overview of development and regulatory aspects of high altitude platform system
+* Power Density and Efficiency Enhancement in ICN DC–DC Converters Using Topology Morphing Control
 ** abstract
-Overview of development and regulatory aspects of high altitude platform system
+This paper introduces a new approach for output voltage regulation in impedance control network (ICN) resonant dc-dc converters, in which the rectifier of the ICN converter alternates between full-bridge and half-bridge topologies. This approach, termed topology morphing control, allows the ICN converter to maintain soft switching across power levels while substantially reducing ...Show More
 *** paper id
 
-* Deep reinforcement learning based computation offloading and resource allocation for low-latency fog radio access networks
+* CCJRF-ICN: A Novel Mechanism for Coadjuvant Caching Joint Request Forwarding in Information Centric Networks
 ** abstract
-Deep reinforcement learning based computation offloading and resource allocation for low-latency fog radio access networks
+Information centric networking (ICN) shifts the focus of existing internet architecture from host-oriented to content-oriented model by enabling in-network caching and content-based forwarding. These ICN features help to increase network performance by decreasing content discovery delay, content server load, and network congestion. To route a content interest inside network such that c...Show More
 *** paper id
 
-* Artificial intelligence for satellite communication: A review
+* Study of p-ICN defined performance measurement Enterprise Architecture
 ** abstract
-Artificial intelligence for satellite communication: A review
+In this paper we propose the performance evaluation based Information Control Nets (p-ICN) to achieve the full compliance with the international organization UN recommendation to get the performance evaluation all over the e-Government projects due to its nature of huge scale and long term project plan of IT investment. However, current real world there is not enough suitable and tangible me...Show More
 *** paper id
 
-* Wireless recommendations for Internet of vehicles: Recent advances, challenges, and opportunities
+* Semantic information management in a SWIM enabled remote tower environment
 ** abstract
-Wireless recommendations for Internet of vehicles: Recent advances, challenges, and opportunities
+Presents a collection of slides covering the following topics: remote virtual towers; EUROCAE working group WG-100; ontology-based data representation model; semRVT; ATM information reference model; AIRM; and RVT reference model.Show More
 *** paper id
 
-* Intelligent cognitive spectrum collaboration: Convergence of spectrum sensing, spectrum access, and coding technology
+* Analysis of en-route vertical flight efficiency
 ** abstract
-Intelligent cognitive spectrum collaboration: Convergence of spectrum sensing, spectrum access, and coding technology
+Presents a collection of slides covering the following topics: en-route vertical flight efficiency; airport and aircraft.Show More
 *** paper id
 
-* Convergence of computing, communication, and caching in Internet of Things
+* Benefits of reducing national playbook flight routing via advanced flight-specific trajectories (AFST)
 ** abstract
-Convergence of computing, communication, and caching in Internet of Things
+It will allow time-based metering to continue more often when there is severe weather in en route airspace by providing weather-free trajectories through metered airspace before flights enter that airspace. It will enable more direct routes - Especially as severe weather dissipates or evolves differently than predicted - Also in clear weather. It will identify shorter routes through Special Activi...Show More
+*** paper id
+
+* IP Over ICN Goes Live
+** abstract
+Information-centric networking (ICN) has long been advocating for radical changes to the IP-based Internet. However, the upgrade challenges that this entails have hindered ICN adoption. To break this loop, the POINT project proposed a hybrid, IP-over-ICN, architecture: IP networks are preserved at the edge, connected to each other over an ICN core. This exploits the key ben...Show More
 *** paper id
 
 * 
 ** abstract
+
 *** paper id
 

@@ -100,7 +100,7 @@ class Ieice
       for index in 0..@paper_title_array.size().to_i do
         file.puts("* " + @paper_title_array[index].to_s)
         file.puts("** " + "abstract")
-        file.puts(@paper_title_array[index].to_s)
+        file.puts(@paper_abstract_array[index].to_s)
         file.puts("*** " + "paper id")
         file.puts(@paper_id_array[index].to_s)
       end
