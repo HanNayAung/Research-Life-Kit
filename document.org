@@ -32,3 +32,10 @@ http://www.blooberry.com/indexdot/html/topics/urlencoding.htm
 
 in Ruby, OptionParser returns boolean instead of input values
 https://stackoverflow.com/questions/36910010/in-ruby-optionparser-returns-boolean-instead-of-input-values
+
+
+
+
+OptionParser 
+https://docs.ruby-lang.org/en/2.1.0/OptionParser.html?search=opts.on#
+https://github.com/phynet/Ruby-OptionParser-Example/blob/master/usage.rb

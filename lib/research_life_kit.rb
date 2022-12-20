@@ -97,11 +97,16 @@ class Ieice
 
   def save_informations
     File.open("titles.org", "w+") do |file|
-      @paper_title_array.each { |element| file.puts("* " + element) }
-      @paper_abstract_array.each { |element| file.puts("** " + element) }
-      @paper_id_array.each { |element| file.puts("*** " + element) }
+      for index in 0..@paper_title_array.size().to_i do
+        file.puts("* " + @paper_title_array[index].to_s)
+        file.puts("** " + "abstract")
+        file.puts(@paper_title_array[index].to_s)
+        file.puts("*** " + "paper id")
+        file.puts(@paper_id_array[index].to_s)
+      end
     end
   end
+
 
 
   def download_paper_from_id
