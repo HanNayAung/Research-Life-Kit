@@ -32,7 +32,6 @@ class Ieice
 
     # Search According to Keyword
     xpath = '/html/body/div[5]/div/div/div/div[3]/div/xpl-root/xpl-header/div/div/div/xpl-search-bar-migr/div/form/div[2]/div/div[1]/xpl-typeahead-migr/div/input'
-
     if keyword
       @browser.text_field(xpath: xpath).set keyword
     end
@@ -52,21 +51,21 @@ class Ieice
       @paper_id_array.push(element.attribute("id"))
     end
 
-    # Show Abstract of each paper in the current page
-    for id in @paper_id_array  do
-      button = @browser.div(:id => "#{id}").div.div(:class => 'row doc-access-tools-container').ul(:class => "List List--horizontal").li(:class => "List-item u-mr-2").a(:class => "js-displayer-control abstract-control u-flex-display-flex u-flex-align-items-center u-hover-text-dec-none stats_Abstract_ShowMore").span(:text => 'Abstract')
-      button.scroll.to
-      button.click
-    end
-    parsed_page = Nokogiri::HTML(@browser.html)
-    # Insert each abstract of paper  in the current page into title_array
-    parsed_page.css('div.js-displayer-content.u-mt-1.stats-SearchResults_DocResult_ViewMore.text-base-md-lh').map do |element|
-      @paper_abstract_array.push(element.text)
-    end
+    # (v1)  Show Abstract of each paper in the current page (show only part)
+    # for id in @paper_id_array  do
+    #   button = @browser.div(:id => "#{id}").div.div(:class => 'row doc-access-tools-container').ul(:class => "List List--horizontal").li(:class => "List-item u-mr-2").a(:class => "js-displayer-control abstract-control u-flex-display-flex u-flex-align-items-center u-hover-text-dec-none stats_Abstract_ShowMore").span(:text => 'Abstract')
+    #   button.scroll.to
+    #   button.click
+    # end
+    # parsed_page = Nokogiri::HTML(@browser.html)
+    # # Insert each abstract of paper  in the current page into title_array
+    # parsed_page.css('div.js-displayer-content.u-mt-1.stats-SearchResults_DocResult_ViewMore.text-base-md-lh').map do |element|
+    #   @paper_abstract_array.push(element.text)
+    # end
 
     if page.to_i >= 2
       for number in 2..page.to_i  do
-        @paper_id_array = []
+        # (v1) @paper_id_array = []
         @browser.scroll.to :bottom
         @browser.div(:class => "pagination-bar hide-mobile text-base-md-lh").ul.li(:text => number.to_s).click
         sleep 5
@@ -79,19 +78,33 @@ class Ieice
         parsed_page.css('div.List-results-items').map do |element|
           @paper_id_array.push(element.attribute("id"))
         end
-        # Show Abstract of each paper in the current page
-        for id in @paper_id_array  do
-          button = @browser.div(:id => "#{id}").div.div(:class => 'row doc-access-tools-container').ul(:class => "List List--horizontal").li(:class => "List-item u-mr-2").a(:class => "js-displayer-control abstract-control u-flex-display-flex u-flex-align-items-center u-hover-text-dec-none stats_Abstract_ShowMore").span(:text => 'Abstract')
-          button.scroll.to
-          button.click
-        end
+        #  (v1)  Show Abstract of each paper in the current page
+        # for id in @paper_id_array  do
+        #     button = @browser.div(:id => "#{id}").div.div(:class => 'row doc-access-tools-container').ul(:class => "List List--horizontal").li(:class => "List-item u-mr-2").a(:class => "js-displayer-control abstract-control u-flex-display-flex u-flex-align-items-center u-hover-text-dec-none stats_Abstract_ShowMore").span(:text => 'Abstract')
+        #     button.scroll.to
+        #     button.click
+        #   end
+        #   parsed_page = Nokogiri::HTML(@browser.html)
+        #   # Insert each abstract of paper in the current page into title_array
+        #   parsed_page.css('div.js-displayer-content.u-mt-1.stats-SearchResults_DocResult_ViewMore.text-base-md-lh').map do |element|
+        #     @paper_abstract_array.push(element.text)
+        #   end
+        # end
+      end
+
+      # Collect Abstract of each paper in the current page (completely)
+      for id in @paper_id_array  do
+        @browser.goto "https://ieeexplore.ieee.org/document/" + "#{id}"
+        sleep 2
         parsed_page = Nokogiri::HTML(@browser.html)
-        # Insert each abstract of paper in the current page into title_array
-        parsed_page.css('div.js-displayer-content.u-mt-1.stats-SearchResults_DocResult_ViewMore.text-base-md-lh').map do |element|
+        # Insert each abstract of paper  in the current page into title_array
+        parsed_page.css('div.abstract-desktop-div.hide-mobile.text-base-md-lh')
+          .css('div.abstract-text.row').css('div.col-12').css('div.u-mb-1').map do |element|
           @paper_abstract_array.push(element.text)
         end
       end
     end
+
   end
 
 
