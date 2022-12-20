@@ -22,13 +22,14 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
   `$ bundle exec exe/research_life_kit -h`
 
+```
 Usage: research_life_kit.rb [options]
     -w=s                             website
     -i=s                             institutional
     -k=s                             keyword
     -t=s                             title
     -p=s                             page
-
+```
 * Example:
 
  `$ bundle exec exe/research_life_kit -w ieice -k ICN -p 2`
