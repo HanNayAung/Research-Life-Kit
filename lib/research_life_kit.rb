@@ -107,26 +107,7 @@ class Ieice
     end
   end
 
-
-
   def download_paper_from_id
-    # button = @browser.div(:id => '9350827').div.div(:class => 'row doc-access-tools-container').ul(:class => "List List--horizontal").li(:class => "List-item u-mr-2").a(:class => "stats_PDF_9350827 u-flex-display-flex").span(:text => 'Abstract')
-    # button.scroll.to
-    # button.click
-
-    # url = 'https://ieeexplore.ieee.org.kwansei.remotexs.co/' +
-    #       'stamp/stamp.jsp?tp=&arnumber=' + @paper_id_array[0]
-    # @browser.goto url
-    # sleep 5
-    # parsed_page = Nokogiri::HTML(@browser.html)
-    # File.open("parsed.html", "w") { |f| f.write "#{parsed_page}" }
-
-    #@browser.button(id: 'download').click
-    # puts @browser.div(:class => 'toolbar').exists?
-    #.div(:id => 'toolbarContainer').div(:id => 'toolbarViewer').exists?
-    # .div(:id => 'toolbarViewerRight').button(title: 'Download')
-    # button.text == 'Submit' # => true
-    # @browser.button(xpath: '//*[@id="download"]').click
   end
 
   def download_papers
@@ -162,11 +143,3 @@ if @website == 'ieice'
   organization_instance.extract_paper_title_abstract
   organization_instance.save_informations
 end
-
-# url = 'https://ieeexplore.ieee.org.kwansei.remotexs.co/Xplore/home.jsp'
-# @browser = Watir::Browser.new
-# # browser.window.maximize
-# @browser.goto url
-# @browser.text_field(id:'username').set user
-# @browser.text_field(id:'password').set password
-# @browser.button(id: 'login').click
