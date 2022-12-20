@@ -16,11 +16,12 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 
-TODO : Write usage instructions here:
+<!-- TODO : Write usage instructions here: -->
 
-You can use option -h to know functions:
+* You can use option -h to know functions:
 
   `$ bundle exec exe/research_life_kit -h`
+
 Usage: research_life_kit.rb [options]
     -w=s                             website
     -i=s                             institutional
@@ -28,10 +29,9 @@ Usage: research_life_kit.rb [options]
     -t=s                             title
     -p=s                             page
 
-Example:
-bundle exec exe/research_life_kit -w ieice -k ICN -p 2
+* Example:
 
-
+ `$ bundle exec exe/research_life_kit -w ieice -k ICN -p 2`
 
 ## Development
 
