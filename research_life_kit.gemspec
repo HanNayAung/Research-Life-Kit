@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = "Help Researchers Life"
   spec.description = "Help Researchers Life"
- 
+
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
   spec.files = Dir.chdir(__dir__) do
@@ -24,6 +24,14 @@ Gem::Specification.new do |spec|
 
   # Uncomment to register a new dependency of your gem
   # spec.add_dependency "example-gem", "~> 1.0"
+  spec.add_development_dependency "rake"
+  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "watir"
+  spec.add_development_dependency "webdrivers"
+  spec.add_development_dependency "nokogiri"
+  spec.add_development_dependency "watir-scroll"
+
+  spec.add_development_dependency "optparse"
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html

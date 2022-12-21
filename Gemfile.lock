@@ -7,6 +7,8 @@ GEM
   remote: https://rubygems.org/
   specs:
     diff-lcs (1.5.0)
+    nokogiri (1.13.10-arm64-darwin)
+      racc (~> 1.4)
     nokogiri (1.13.10-x86_64-linux)
       racc (~> 1.4)
     optparse (0.3.0)
@@ -44,6 +46,7 @@ GEM
     websocket (1.2.9)
 
 PLATFORMS
+  arm64-darwin-20
   x86_64-linux
 
 DEPENDENCIES
@@ -57,4 +60,4 @@ DEPENDENCIES
   webdrivers
 
 BUNDLED WITH
-   2.3.24
+   2.3.23
